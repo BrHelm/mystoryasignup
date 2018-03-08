@@ -1,0 +1,18 @@
+.footer{
+background-color:  rgb(246, 246, 246);
+border-top: 1px solid darkgrey;
+}
+.footerLogo{
+  position: relative;
+  left: 10%;
+}
+
+.companyInfo{
+  text-align: left;
+}
+
+.socialIcons{
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
