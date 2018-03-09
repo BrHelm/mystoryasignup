@@ -388,7 +388,7 @@
   visibility: visible;
 }
 .carousel-inner{
-  background-image: url("img/shelfWood.png");
+  background-image: url("img/lineShelfgrey.png");
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 90%;
@@ -500,7 +500,7 @@
   width: 50%;
   /*   background-position-x: 50%;
   background-position-y: 50%; */
-  box-shadow: -3px 5px 5px black;
+  /* box-shadow: -3px 5px 5px black; */
 }
 .boxShadow{
   box-shadow: -3px 5px 5px black;

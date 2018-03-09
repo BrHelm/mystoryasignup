@@ -12,7 +12,7 @@ class InfoBook extends Component {
                     <div className='col-sm-12 col-md-12 col-lg-12'>
                         <FlipPage className='boxShadow' showSwipeHint='true' flipOnTouch='true' loopForever='true' height='720' width='1280px' orientation='horizontal' uncutPages='true' maxAngle='65' animationDuration='400' >
                             <article>
-                                <img className="img-responsive" src={require("./img/rihannaPage0.jpg")} />
+                                <img className="img-responsive" src={require("./img/rihannaPage1.jpg")} />
                             </article>
                             <article>
                                 <div className="container">

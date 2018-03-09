@@ -19,7 +19,10 @@ class LogIn extends Component {
                 ];
             default:
                 return [
-                    <div><a href="/api/logout">Logout</a></div>
+                    <div className='container'><div className='row' style={{ marginLeft: '43%' }}>
+                        <div className='col-xs-12 col-sm-12 col-md-12 col-lg-12'>
+                        <div><a href="/api/logout">Logout</a></div>
+                    </div></div></div>
                 ];
         }
     }
