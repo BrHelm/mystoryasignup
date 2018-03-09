@@ -26,13 +26,14 @@ passport.use(
         },
         async (accessToken, refreshToken, profile, done) => {
             const existingUser = await User.findOne({ googleId: profile.id });
- 
+  
             if (existingUser) {
                return done(null, existingUser);
             }
             
-            const user = await new User({ googleId: profile.id }).save();
+            const user = await new User({ googleId: profile.id, email: profile.emails, photos: profile.photos }).save();
             done(null, user);
+            console.log('profile:', profile);
         }
     ), //end of google strategy
 );
@@ -54,12 +55,10 @@ passport.use(
 
             const user = await new User({ 
                 facebookId: profile.id, 
-                email: profile.email,
-                displayName: profile.displayName, 
-                ageRange: profile.age_range, 
-                firstName: profile.first_name, 
-                lastName: profile.last_name }).save();
+                email: profile.emails,
+                photos: profile.photos }).save();
             cb(null, user);
+            console.log('profile:', profile);
         }
     )
 );
