@@ -52,7 +52,13 @@ passport.use(
                 return cb(null, existingUser);
             }
 
-            const user = await new User({ facebookId: profile.id, displayName: profile.displayName, ageRange: profile.age_range, firstName: profile.first_name, lastName: profile.last_name }).save();
+            const user = await new User({ 
+                facebookId: profile.id, 
+                email: profile.email,
+                displayName: profile.displayName, 
+                ageRange: profile.age_range, 
+                firstName: profile.first_name, 
+                lastName: profile.last_name }).save();
             cb(null, user);
         }
     )
