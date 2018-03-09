@@ -463,32 +463,25 @@
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
-/* Bottom left text */
-.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-}
-
-/* Top left text */
 .top-left {
     position: absolute;
-    top: 8px;
-    left: 16px;
+    top: 20%;
+    left: 12%;
 }
-
-/* Top right text */
 .top-right {
     position: absolute;
-    top: 8px;
-    right: 16px;
+    top: 20%;
+    right: 57%;
 }
-
-/* Bottom right text */
 .bottom-right {
     position: absolute;
-    bottom: 8px;
-    right: 16px;
+    bottom: 20%;
+    right: 57%;
+}
+.bottom-left {
+    position: absolute;
+    bottom: 20%;
+    left: 12%;
 }
 
 /* Centered text */
@@ -499,9 +492,25 @@
     transform: translate(-50%, -50%);
 }
 
+.crossImg{
+  /* background-image: url("img/cross2.png"); */
+  /* background-repeat: no-repeat; */
+  margin: 1%;
+  height: 50%;
+  width: 50%;
+  /*   background-position-x: 50%;
+  background-position-y: 50%; */
+  box-shadow: -3px 5px 5px black;
+}
+.boxShadow{
+  box-shadow: -3px 5px 5px black;
+}
 .crossBG{
   background-image: url("img/cross2.png");
   background-repeat: no-repeat;
-  background-position-x: 50%;
-  background-position-y: 50%;
+  margin: 1%;
+  height: 50%;
+  width: 50%;
+  /*   background-position-x: 50%;
+  background-position-y: 50%; */
 }

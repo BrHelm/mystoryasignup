@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import "./App.css";
 import FlipPage from 'react-flip-page';
+import SelectPage from './SelectPage';
 
 class InfoBook extends Component {
     render() {
         return (
+            <div className='container-fluid darkWood'>
             <div className='container'>
-                <div className='row' style={{ marginTop: '1%' }}>
+                <div className='row' style={{ marginTop: '7%', marginBottom: '7%'}}>
                     <div className='col-sm-12 col-md-12 col-lg-12'>
-                        <FlipPage showSwipeHint='true' flipOnTouch='true' loopForever='true' height='720' width='1280px' orientation='horizontal' uncutPages='true' maxAngle='65' animationDuration='400' >
+                        <FlipPage className='boxShadow' showSwipeHint='true' flipOnTouch='true' loopForever='true' height='720' width='1280px' orientation='horizontal' uncutPages='true' maxAngle='65' animationDuration='400' >
                             <article>
                                 <img className="img-responsive" src={require("./img/rihannaPage0.jpg")} />
                             </article>
@@ -16,10 +18,20 @@ class InfoBook extends Component {
                                 <div className="container">
                                     <div className="row">
                                         <div className="col-sm-6 col-md-6 col-lg-6">
-                                            <span> text </span>
+                                            <div className="row">
+                                                <SelectPage />
+                                            </div>
+                                            <div className="row">
+                                                <SelectPage />
+                                            </div>
                                         </div>
                                         <div className="col-sm-6 col-md-6 col-lg-6">
-                                            <span> text </span>
+                                            <div className="row">
+                                                <SelectPage />
+                                            </div>
+                                            <div className="row">
+                                                <SelectPage />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -154,6 +166,7 @@ class InfoBook extends Component {
                     </div>
                 </div>
 
+            </div>
             </div>
         );
     }
