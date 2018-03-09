@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
-import { render } from "react-dom";
+/* import { Link } from "react-router-dom";
+import { render } from "react-dom"; */
 import { Carousel } from "react-bootstrap";
 import "./App.css";
 
