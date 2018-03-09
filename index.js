@@ -6,8 +6,6 @@ const bodyParser = require('body-parser');
 const keys = require('./config/keys');
 require('./models/User');
 require('./models/Survey');
-require('./models/Book');
-require('./models/Page');
 require('./services/passport');
 
 
@@ -29,9 +27,7 @@ app.use(passport.session());
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
 require('./routes/surveyRoutes')(app);
-require('./routes/bookRoutes')(app);
-require('./routes/createRoutes')(app);
-require('./routes/pageRoutes')(app);
+
 
 if (process.env.NODE_ENV === 'production'){
     // express will serve up production assets
@@ -48,4 +44,3 @@ if (process.env.NODE_ENV === 'production'){
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);
-

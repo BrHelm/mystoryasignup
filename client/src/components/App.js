@@ -17,7 +17,6 @@ class App extends Component {
 
     render() {
         return (
-            <BrowserRouter>
                 <div>
                     <Landing />
                     <InfoPanel />
@@ -26,7 +25,6 @@ class App extends Component {
                     <InfoBook />
                     <Footer />
                 </div>
-            </BrowserRouter>
         );
     }
 };

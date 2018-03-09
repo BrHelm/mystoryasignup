@@ -5,7 +5,7 @@ const userSchema = new Schema ({
     googleId: String,
     facebookId: String,
     displayName: String,
-    name: String,
+    userName: String,
     firstName: String,
     lastName: String,
     ageRange: String,
